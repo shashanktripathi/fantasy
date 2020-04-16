@@ -13,7 +13,7 @@ after_success:
   - docker --version  # document the version travis is using
   - docker build -t shashank-fantasy .
   - docker tag shashank-fantasy:latest ec2-15-206-92-162.ap-south-1.compute.amazonaws.com/shashank-fantasy:latest
-  - docker push ec2-15-206-92-162.ap-south-1.compute.amazonaws.com/shashank-fantasy:latest
+  - docker push http://ec2-15-206-92-162.ap-south-1.compute.amazonaws.com/shashank-fantasy:latest
 
 notifications:
   email: shashank.tripathi25@gmail.com
